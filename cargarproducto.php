@@ -61,6 +61,7 @@
         <!-- Footer -->
          <?php include "footer.php"?>   
         <!-- Fin footer -->
+        <!-- Separar -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
