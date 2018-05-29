@@ -1,4 +1,5 @@
 <?php include "header.php"?>
+<?php include "basedatos.php"?>
         <!-- contenido -->
         <div class="container-fluid contenido">
             <div class"row">
@@ -7,22 +8,18 @@
                 </div>
             </div>
             <div class="row">
-                <?php
-                /* Generar lista de productos*/
-                
-                for ($i = 0; $i < 4; $i++) {
-                    echo '<div class="col-md-3">
-                            <div class="card" style="width: 18rem;">
-                              <img class="card-img-top img-fluid" src="img/img.svg" alt="">
-                              <div class="card-body">
-                                <h5 class="card-title">Nombre producto</h5>
-                                <p class="card-text">Precio producto</p>
-                                <a href="#" class="btn btn-primary">Comprar</a>
-                              </div>
+           
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="img/img1.jpg" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Nombre Producto</h5>
+                                <p class="card-text text-success">$ Precio Producto</p>
+                                <a href="#" class="btn btn-primary btn-lg">Comprar</a>
                             </div>
-                        </div>';
-                }
-                ?>
+                        </div>
+                    </div>
+                     
             </div>
         </div>
         <!-- fin contenido -->

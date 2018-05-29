@@ -1,4 +1,8 @@
-<?php include "header.php"?>
+<?php
+require_once "basedatos.php";
+require_once "clases/Producto.php";
+require_once "header.php";
+?>
         <!-- contenido -->
         <div class="container-fluid contenido">
 
@@ -18,27 +22,16 @@
                 <div class="col-md-7">
                     <p class="font-italic">Resultados de la busqueda "algo que busque"</p>
                     <!-- item -->
-                    
                     <?php
-                    /* Generar lista de productos */
-                     for ($i = 0; $i < 4; $i++) {
-                         
-                        echo ' <div class="row articulo rounded">
-                                    <div class="col-md-4">
-                                        <a href="#">
-                                            <img class="img-fluid" src="img/img.svg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <h3>Nombre producto</h3>
-                                        <p>$ precio producto</p>
-                                        <a class="btn btn-primary" href="#">comprar</a>
-                                    </div>
-                                </div>';
-                     }
-                     ?>
+                /* Generar lista de productos*/
+                    while ($producto = $listaProductosStmt->fetch()) {
+                        // acá tenemos que instanciar los objetos
+                        $nuevoProducto = new app\clases\Producto($producto['nombre_producto'], $producto['descripcion_producto'], $producto['precio_producto'], $producto['codigo_producto'], $producto['imagen_producto'], $producto['id']);
+                        echo $nuevoProducto->obtenerHtml();
+                       } //aca cierro el while abiendo un etiqueta php nuevamente 
+                    ?>; 
                     <!--fin item -->
-                    <nav aria-label="Page navigation example">
+                    <nav aria-label="Page navigation example">e
                         <ul class="pagination">
                             <li class="page-item">
                                 <a class="page-link" href="#" aria-label="Previous">
