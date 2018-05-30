@@ -1,44 +1,37 @@
-
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Iniciar sesión</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
-        <!-- Navigation -->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-            <a class="navbar-brand" href="index.php">Mi sistema</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="registrarse.php">Registrarse</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="listarproductos.php">listarproductos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.php">Iniciar Sesion</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="cargarproducto.php">Cargar producto</a>
-                    </li>
+<html>
+  <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css" />
+       <!--Import style.css-->
+      <link type="text/css" rel="stylesheet" href="css/style.css" />
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+       <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script>
+       $(document).ready(function() {
+              $('select').material_select();
+       });
+      </script>
+      <title>Mi sistema</title>
+  </head>
 
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="¿Que buscas?" aria-label="Search">
-                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
-                </form>
-            </div>
-        </nav>
-        <!-- end navigation -->
+  <body> 
+  <!--Navigation-->
+    <div class="navbar-fixed">
+      <nav class="teal darken-3">
+        <div class="nav-wrapper">
+          <a href="index.php" class="brand-logo">Mi sistema</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="registrarse.php">Registrarse</a></li>
+            <li><a href="#">Listar Productos</a></li>
+            <li><a href="login.php">Iniciar Sesion</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- End Navigation-->

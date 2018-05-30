@@ -1,72 +1,88 @@
 <?php include "header.php"?>
-        <!-- contenido -->
-        <div class="container-fluid contenido">
-            <div class="row">
-                <div class="col-md-12">
-                     <h4 class="text-center">Cargar nuevo producto</h4>
-                    
-                </div>
+    <!-- Contenido de la pagina -->
+    <div class="container">
+      <div class="row">
+      <h4 class="teal-text text-darken-3">Registrarse</h4>
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <input  id="first_name" type="text" class="validate">
+              <label for="first_name">Nombre</label>
             </div>
-            <div class="row">
-                <div class="col-md-3">
-                     <img class="img-fluid" src="img/img.svg" alt="">
-                      <form>
-                      <div class="form-group">
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                      </div>
-                    </form>
-                </div>
-                <div class="col-md-9">
-                    <form>
-                        <div class="row">
-                            <div class="form-group col-md-8">  
-                                <input type="text" class="form-control" placeholder="Nombre">
-                            </div>   
-                            <div class="form-group col-md-4">
-                                <input type="text" class="form-control" placeholder="Codigo"> 
-                            </div>
-                        </div>    
-                        <div class="row">
-                            <div class="form-group col-md-6">  
-                                <input type="text" class="form-control" placeholder="precio">
-                            </div>   
-                            <div class="form-group col-md-6">
-                                <input type="text" class="form-control" placeholder="stock"> 
-                            </div>
-                        </div>    
-                        <div class="form-group">
-                            <label for="descripcion">Descripcion del producto</label>
-                            <textarea class="form-control" id="descripcion" rows="3"></textarea>
-                        </div>
-                        <div class="row">
-                            <div class="form-group col-md-6">
-                                <select id="inputState" class="form-control">
-                                    <option selected>Categoria</option>
-                                    <option>...</option>
-                                    <option>...</option>
-                                    <option>...</option>
-                                    <option>...</option>
-                                    <option>...</option>
-                                    <option>...</option>
-                                </select>
-                            </div>
-                        </div>    
-                        <button type="submit" class="btn btn-primary btn-lg btn-block">Cargar producto</button>
-                    </form>  
-                    
-                </div>    
+            <div class="input-field col s6">
+              <input id="last_name" type="text" class="validate">
+              <label for="last_name">Apellido</label>
             </div>
-        </div>
-        <!-- fin contenido -->
-        <!-- Footer -->
-         <?php include "footer.php"?>   
-        <!-- Fin footer -->
-        <!-- Separar -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-    </body>
-</html>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="disabled" type="text" class="validate">
+              <label for="username">Nombre de usuario</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="password" type="password" class="validate">
+              <label for="password">Password</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="password" type="password" class="validate">
+              <label for="password">Confirmar password</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col l6 s12">
+              <select>
+                <option value="" disabled selected>Elegi tu provincia</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+              <label>Provincia</label>
+            </div>
+            <div class="input-field col l6 s12 ">
+              <select>
+                <option value="" disabled selected>Elegi tu ciudad</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+              <label>Ciudad</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s6">
+              <button class="btn waves-effect waves-light btn-large" type="submit" name="action">Registrarse
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    </div>
+    <!-- fin contenido -->
+    <!-- Footer -->
+<?php include "footer.php"?>   
